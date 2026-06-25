@@ -21,27 +21,27 @@ The app uses `output: "export"` in `next.config.mjs`, so it is ready for Vercel,
 
 ## Deploy to GitHub Pages
 
-This app uses root-relative assets such as `/assets/...`, so the recommended GitHub Pages repository name is:
+This app is configured for the `phonics-material` GitHub Pages project path:
 
 ```text
-penny00703-crypto.github.io
+https://penny00703-crypto.github.io/phonics-material/
 ```
 
-After creating that repository on GitHub, upload the contents of this folder or run these commands from this folder:
+Upload the contents of this folder to `penny00703-crypto/phonics-material` or run these commands from this folder:
 
 ```bash
 git init
 git branch -M main
 git add .
 git commit -m "Deploy phonics trial lesson"
-git remote add origin https://github.com/penny00703-crypto/penny00703-crypto.github.io.git
+git remote add origin https://github.com/penny00703-crypto/phonics-material.git
 git push -u origin main
 ```
 
 GitHub Actions will build and publish the static site automatically. Once the Pages workflow finishes, the lesson will be available at:
 
 ```text
-https://penny00703-crypto.github.io/
+https://penny00703-crypto.github.io/phonics-material/
 ```
 
 ## Source Content Coverage

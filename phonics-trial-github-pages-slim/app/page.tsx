@@ -14,24 +14,27 @@ const accent = {
   lilac: "#7C6EF8"
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const asset = (name: string) => `${basePath}/assets/${name}`;
+
 const standaloneWordImages: Record<string, string> = {
-  alligator: "/assets/word-items/alligator.png",
-  ant: "/assets/word-items/ant.png",
-  apple: "/assets/word-items/apple.png",
-  ax: "/assets/word-items/ax.png",
-  bed: "/assets/word-items/bed.png",
-  get: "/assets/word-items/get.png",
-  jam: "/assets/word-items/jam.png",
-  jet: "/assets/word-items/jet.png",
-  leg: "/assets/word-items/leg.png",
-  mat: "/assets/word-items/mat.png",
-  net: "/assets/word-items/net.png",
-  pat: "/assets/word-items/pat.png",
-  pen: "/assets/word-items/pen.png",
-  pet: "/assets/word-items/pet.png",
-  rat: "/assets/word-items/rat.png",
-  red: "/assets/word-items/red.png",
-  set: "/assets/word-items/set.png"
+  alligator: asset("word-items/alligator.png"),
+  ant: asset("word-items/ant.png"),
+  apple: asset("word-items/apple.png"),
+  ax: asset("word-items/ax.png"),
+  bed: asset("word-items/bed.png"),
+  get: asset("word-items/get.png"),
+  jam: asset("word-items/jam.png"),
+  jet: asset("word-items/jet.png"),
+  leg: asset("word-items/leg.png"),
+  mat: asset("word-items/mat.png"),
+  net: asset("word-items/net.png"),
+  pat: asset("word-items/pat.png"),
+  pen: asset("word-items/pen.png"),
+  pet: asset("word-items/pet.png"),
+  rat: asset("word-items/rat.png"),
+  red: asset("word-items/red.png"),
+  set: asset("word-items/set.png")
 };
 
 const wordImageTuning: Record<string, { scale?: number; x?: number; y?: number }> = {

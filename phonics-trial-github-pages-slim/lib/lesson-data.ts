@@ -74,7 +74,8 @@ export type QuizQuestion = {
   audio?: string;
 };
 
-const asset = (name: string) => `/assets/${name}`;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const asset = (name: string) => `${basePath}/assets/${name}`;
 const humanVoice = (word: string) => asset(`voice-human/${word}.mp3`);
 const generatedHero = asset("phonics-hero-generated.png");
 
